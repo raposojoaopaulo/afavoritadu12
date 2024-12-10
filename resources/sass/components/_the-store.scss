@@ -1,0 +1,55 @@
+.the-store {
+  @apply w-full bg-the-store-desk bg-cover bg-center font-poppins py-[70px] px-[15px];
+
+  @screen lg {
+    @apply py-[120px] px-0;
+  }
+
+  .container {
+    @apply flex flex-col items-center;
+  }
+
+  &__title {
+    @apply text-white text-4xl font-normal text-center mb-[30px];
+
+    @screen lg {
+      @apply text-[55px] max-w-[560px] tracking-wider leading-[100%] mb-[40px];
+    }
+
+    span {
+      @apply font-bold;
+    }
+  }
+
+  &__products-list {
+    @apply flex flex-wrap gap-6 max-w-[330px] justify-center pb-[30px];
+
+    @screen lg {
+      @apply flex-row max-w-none border-b border-[#FFFFFF] pb-[60px];
+    }
+
+    .product-item {
+      @apply flex flex-col gap-4 items-center;
+
+      @screen lg {
+        
+        &:hover {
+          @apply transform scale-105;
+          transition: all 0.3s;
+        }
+      }
+
+      &__icon {
+        @apply w-[92px] h-[92px] bg-white rounded-[15px] flex items-center justify-center drop-shadow-sm;
+
+        svg {
+          @apply w-auto h-[64px];
+        }
+      }
+
+      &__name {
+        @apply text-white text-[13px] font-normal text-center uppercase;
+      }
+    }
+  }
+}

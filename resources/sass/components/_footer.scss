@@ -1,0 +1,87 @@
+footer {
+  @apply bg-pink-primary flex flex-col items-center justify-center text-white font-poppins border-t-[1px] border-[#E5E5E5] py-[30px] px-[20px];
+
+  @screen lg {
+    @apply py-[50px] px-0;
+  }
+
+  .container {
+    @apply flex flex-col items-center justify-center mt-[30px];
+
+    @screen lg {
+      @apply flex-row justify-between;
+    }
+  }
+
+  .links {
+    @apply flex flex-col gap-[10px] items-center;
+
+    @screen lg {
+      @apply items-start;
+    }
+  }
+
+  .contactWhats {
+    @apply flex flex-col items-center mt-[20px];
+
+    &__title {
+      @apply text-[26px] text-center font-normal leading-[100%] max-w-[200px] mt-[40px];
+
+      @screen lg {
+        @apply text-[26px] max-w-[200px] mt-0;
+      }
+
+      span {
+        @apply text-[28px] font-bold;
+
+        @screen lg {
+          @apply text-[28px] max-w-[400px];
+        }
+      }
+    }
+
+    &__button {
+      @apply flex flex-row justify-center items-center w-full bg-[#39B54A] rounded-[15px] gap-[15px] p-[15px] mt-[15px] transition-all duration-300;
+
+      @screen lg {
+        @apply max-w-[300px];
+      }
+      
+      svg {
+        @apply max-w-[30px] max-h-[30px] drop-shadow-md;
+      }
+
+      .number {
+        @apply text-[25px] font-bold text-white drop-shadow-md;
+      }
+
+      &:hover {
+        @apply scale-105 bg-[#30aa40];
+      }
+    }
+  }
+
+  .infos {
+    @apply flex flex-col gap-[10px] items-center mt-[20px];
+
+    @screen lg {
+      @apply items-end;
+    }
+
+    &__links {
+      @apply flex flex-row gap-[10px];
+      
+      img {
+        @apply w-10 h-10;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        svg {
+          @apply scale-110 transition;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+} 

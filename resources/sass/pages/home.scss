@@ -1,0 +1,56 @@
+
+.home {
+  @apply flex flex-col justify-center items-center w-full h-[100vh] bg-pink-primary font-poppins gap-[50px];
+
+  @screen lg {
+    @apply bg-select-store-desk bg-center bg-cover bg-no-repeat;
+  }
+
+  .selectStore {
+    @apply flex flex-col items-center justify-center bg-white shadow-md rounded-[25px] py-[40px] px-[80px];
+
+    @screen lg {
+      @apply w-[1200px] h-[450px] gap-[50px];
+    }
+
+    h2 {
+      @apply text-[52px] text-pink-primary font-medium text-center leading-[100%]; 
+
+      @screen lg {
+        @apply max-w-[468px] mb-[30px];
+      }
+
+      span {
+        @apply font-bold;
+      }
+    }
+
+    &__form {
+      @apply flex flex-col w-full items-center gap-[50px];
+
+      &-select {
+        @apply w-full h-[50px] bg-pink-primary border-none rounded-[0px] px-[25px] flex items-center justify-center text-white text-[18px] font-medium cursor-pointer;
+
+        option {
+          @apply bg-gray-100 text-[20px] text-gray-900 mb-[15px] cursor-pointer;
+
+          &:hover {
+            @apply bg-gray-200;
+          }
+        }
+
+        .disabled {
+          @apply text-[15px] text-gray-500;
+        }
+      }
+
+      &-btn {
+        @apply bg-[#B079FC] text-center text-white font-medium text-[18px] rounded-lg px-[30px] py-[15px] cursor-pointer transform transition-all duration-200 ease-in-out;
+
+        &:hover {
+          @apply scale-105 bg-pink-dark transform transition-all duration-200 ease-in-out;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.contact-form {
+  @apply w-full flex flex-col items-center font-poppins px-[20px];
+
+  form {
+    @apply flex flex-col items-center w-full gap-[20px];
+
+    @screen lg {
+      @apply max-w-[800px];
+    }
+  }
+
+  .formRow {
+    @apply w-full flex flex-col items-center gap-[20px];
+
+    @screen lg {
+      @apply flex-row;
+    }
+  }
+
+  .formGroup {
+    @apply w-full flex flex-col items-start;
+
+    &.website {
+      @apply hidden;
+    }
+
+    input {
+      @apply w-full h-[50px] px-[20px] border-[1px] border-solid border-[#E5E5E5] rounded-[15px] text-[#333333] font-semibold;
+
+      @screen lg {
+        @apply h-[60px] px-[30px];
+      }
+    }
+
+    textarea {
+      @apply w-full h-[150px] px-[20px] py-[10px] border-[1px] border-solid border-[#E5E5E5] rounded-[15px] text-[#333333] font-semibold;
+
+      @screen lg {
+        @apply h-[200px] px-[30px] py-[20px];
+      }
+    }
+  }
+
+  button {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-[10px];
+  }
+
+  .success-message {
+    @apply w-full bg-[#52ff69] text-[#008000] font-normal text-[18px] py-[20px] px-[20px] rounded-[15px] mt-[20px] mb-[30px] max-w-[800px] text-center;
+  }
+}

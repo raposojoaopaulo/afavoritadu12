@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'components/header';
+@import 'components/slider';
+@import 'components/the-store';
+@import 'components/gallery';
+@import 'components/social';
+@import 'components/contact';
+@import 'components/contact-form';
+@import 'components/footer';
+
+@import 'pages/home';
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply mx-auto max-w-[1200px];
+}
+
+.whats-cta {
+  @apply flex justify-center items-center bg-[#39B54A] rounded-lg w-[270px] h-[70px] mt-4 gap-[15px];
+
+  @screen lg {
+    @apply w-[350px] h-[70px] mt-0;
+    transition: all 0.3s;
+
+    &:hover {
+      @apply scale-105 bg-[#30aa40];
+    }
+  }
+
+  svg {
+    @apply w-[40px] drop-shadow-md;
+
+    @screen lg {
+      @apply w-[50px];
+    }
+  }
+
+  &__text {
+    @apply flex flex-col justify-center h-full w-auto text-[#1B7723] text-[13px] leading-[120%] font-semibold mb-1;
+
+    @screen lg {
+      @apply text-[18px] mb-0;
+    }
+
+    span {
+      @apply text-[30px] font-bold mb-[5px] text-white drop-shadow-md mt-[4px];
+
+      @screen lg {
+        @apply text-[35px] mb-[10px];
+      }
+    }
+  }
+}
+

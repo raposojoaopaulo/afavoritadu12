@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply flex mx-auto max-w-[80rem] p-4 lg:px-[2rem];
+}
+
+/* form de criar e editar */
+
+.form-box {
+  @apply flex w-full bg-white shadow-md rounded-lg p-6 my-[3rem] lg:p-12;
+}
+
+.form-admin {
+  @apply flex flex-col w-full justify-center items-center gap-4;
+}
+
+.group {
+  @apply flex flex-row w-full gap-4;
+}
+
+.social {
+  @apply flex flex-col w-full gap-4 py-[40px];
+}
+
+.contacts {
+  @apply flex flex-col w-full pb-[30px];
+}
+
+.form-admin .form-group {
+  @apply flex flex-col w-full;
+}
+
+.form-admin .form-group label {
+  @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+}
+
+.form-admin .form-group input {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+/* images */
+.order-box {
+  @apply flex flex-row justify-center w-full bg-white shadow-md rounded-lg p-6 mb-5 lg:p-12;
+}
+
+.adminGallery {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12;
+}
+
+.order-card {
+  @apply flex flex-col bg-gray-50 drop-shadow-sm rounded-[15px] justify-center items-center p-4 gap-2;
+
+  p {
+    @apply max-w-[128px] truncate;
+  }
+}
+
+/* fim do form */
+
+h2 {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mb-6;
+}
+
+h3 {
+  @apply text-xl font-bold text-gray-600 dark:text-white;
+}
+
+.btn-create {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-edit {
+  @apply bg-[#e9e640] hover:bg-[#c5c742]  text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-att {
+  @apply bg-[#41e241] hover:bg-[#41c447]  text-white font-bold py-2 px-4 rounded;
+}
+
+.success-container {
+  @apply bg-[#8aff90] text-[#206e24] p-6 rounded-[15px] mb-4;
+}
+
+.error-container {
+  @apply bg-[#c44141] text-[#6e2020] p-2 rounded mb-4;
+}
+
+/* botoes */
